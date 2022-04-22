@@ -1,0 +1,12 @@
+{
+  "code" : "org.meveo.api.internationalization.LocalizedMessageTestScript",
+  "inputs" : [ ],
+  "outputs" : [ ],
+  "generateOutputs" : false,
+  "type" : "JAVA",
+  "transactionType" : "SAME",
+  "executionRoles" : [ ],
+  "sourcingRoles" : [ ],
+  "mavenDependencies" : [ ],
+  "importScriptInstances" : [ "org.meveo.api.internationalization.Internationalizer" ]
+}

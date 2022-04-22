@@ -1,0 +1,9 @@
+{
+  "code" : "mv-internationalization",
+  "description" : "module will help in localization of messages",
+  "license" : "GPL",
+  "currentVersion" : "0.1",
+  "isInDraft" : true,
+  "moduleDependencies" : [ ],
+  "moduleFiles" : [ ]
+}

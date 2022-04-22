@@ -1,0 +1,65 @@
+{
+    "storages": ["SQL"],
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "id": "LocalizedMessage",
+    "title": "LocalizedMessage",
+    "type": "object",
+    "properties": {
+        "module": {
+            "storages": ["SQL"],
+            "nullable": false,
+            "description": "module",
+            "readOnly": false,
+            "versionable": false,
+            "id": "CE_LocalizedMessage_module",
+            "title": "LocalizedMessage.module",
+            "$ref": "#/definitions/org.meveo.model.module.MeveoModule"
+        },
+        "language": {
+            "storages": ["SQL"],
+            "nullable": true,
+            "description": "language",
+            "readOnly": false,
+            "versionable": false,
+            "id": "CE_LocalizedMessage_language",
+            "title": "LocalizedMessage.language",
+            "$ref": "#/definitions/org.meveo.model.billing.Language"
+        },
+        "id": {
+            "storages": ["SQL"],
+            "nullable": true,
+            "description": "id",
+            "readOnly": false,
+            "versionable": false,
+            "id": "CE_LocalizedMessage_id",
+            "title": "LocalizedMessage.id",
+            "type": "integer"
+        },
+        "value": {
+            "storages": ["SQL"],
+            "nullable": false,
+            "minLength": 1,
+            "description": "value",
+            "readOnly": false,
+            "versionable": false,
+            "id": "CE_LocalizedMessage_value",
+            "title": "LocalizedMessage.value",
+            "type": "string"
+        },
+        "key": {
+            "storages": ["SQL"],
+            "nullable": true,
+            "description": "key",
+            "readOnly": false,
+            "versionable": false,
+            "id": "CE_LocalizedMessage_key",
+            "title": "LocalizedMessage.key",
+            "type": "string",
+            "maxLength": 255
+        }
+    },
+    "required": [
+        "module",
+        "value"
+    ]
+}

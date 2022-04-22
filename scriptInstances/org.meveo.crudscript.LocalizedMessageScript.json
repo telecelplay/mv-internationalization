@@ -1,0 +1,17 @@
+{
+  "code" : "org.meveo.crudscript.LocalizedMessageScript",
+  "description" : "CrudEventListenerScript for Custom Entity LocalizedMessage",
+  "inputs" : [ ],
+  "outputs" : [ {
+    "name" : "entityClass",
+    "type" : "Class<LocalizedMessage>",
+    "description" : "the class of the entity"
+  } ],
+  "generateOutputs" : false,
+  "type" : "JAVA",
+  "transactionType" : "SAME",
+  "executionRoles" : [ ],
+  "sourcingRoles" : [ ],
+  "mavenDependencies" : [ ],
+  "importScriptInstances" : [ ]
+}

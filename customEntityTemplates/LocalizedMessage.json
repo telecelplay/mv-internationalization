@@ -1,0 +1,12 @@
+{
+  "code" : "LocalizedMessage",
+  "name" : "LocalizedMessage",
+  "crudEventListenerScript" : "org.meveo.crudscript.LocalizedMessageScript",
+  "customEntityCategoryCode" : "MessageBundle",
+  "availableStorages" : [ "SQL" ],
+  "sqlStorageConfiguration" : {
+    "storeAsTable" : true
+  },
+  "samples" : [ ],
+  "audited" : false
+}
