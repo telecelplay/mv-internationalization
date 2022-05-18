@@ -131,4 +131,30 @@ public class Internationalizer extends Script {
       return null;
     }
   
+    public Map<String, String> getLocalizedMesages(List<String> keys){
+      Map<String, String> messages = new HashMap<>();
+      List<LocalizedMessage> localizedMesages = crossStorageApi.find(defaultRepo, LocalizedMessage.class)
+      												 .by("module", this.module)
+        											 .by("inList key", keys)
+                                                     .getResults();
+      
+      log.info("Localized message(s) total fetched= "+localizedMesages.size());
+      Iterator<Language> itr = this.intendedLanguages.iterator();
+      if(localizedMesages != null && localizedMesages.size() > 0 ){
+          while(itr.hasNext()){	
+              Language intendedLanguage = itr.next();
+              List<LocalizedMessage> localizedMessages = localizedMesages.stream().filter(lm->lm.getLanguage().getId().longValue() == intendedLanguage.getId().longValue()).collect(Collectors.toList());
+              if(localizedMessages != null ){
+                  localizedMessages.forEach(lm-> {
+                    if(messages.get(lm.getKey()) == null){
+                      messages.put(lm.getKey(), lm.getValue());
+                      log.info("Message added "+lm.getValue());
+                    }  
+                  });
+              }
+	      }      
+      }
+      return messages;
+    }
+  
 }
