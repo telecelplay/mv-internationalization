@@ -4,7 +4,6 @@ import org.meveo.model.CustomEntity;
 import java.util.List;
 import org.meveo.model.persistence.DBStorageType;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import org.meveo.model.module.MeveoModule;
 import org.meveo.model.billing.Language;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -23,15 +22,15 @@ public class LocalizedMessage implements CustomEntity {
     private DBStorageType storages;
 
     @JsonProperty(required = true)
-    private MeveoModule module;
-
     private Language language;
 
+    @JsonProperty(required = true)
     private Long id;
 
     @JsonProperty(required = true)
     private String value;
 
+    @JsonProperty(required = true)
     private String key;
 
     @Override()
@@ -49,14 +48,6 @@ public class LocalizedMessage implements CustomEntity {
 
     public void setStorages(DBStorageType storages) {
         this.storages = storages;
-    }
-
-    public MeveoModule getModule() {
-        return module;
-    }
-
-    public void setModule(MeveoModule module) {
-        this.module = module;
     }
 
     public Language getLanguage() {

@@ -1,23 +1,14 @@
 {
     "storages": ["SQL"],
+    "default": "localizedmessage",
     "$schema": "http://json-schema.org/draft-07/schema",
     "id": "LocalizedMessage",
     "title": "LocalizedMessage",
     "type": "object",
     "properties": {
-        "module": {
-            "storages": ["SQL"],
-            "nullable": false,
-            "description": "module",
-            "readOnly": false,
-            "versionable": false,
-            "id": "CE_LocalizedMessage_module",
-            "title": "LocalizedMessage.module",
-            "$ref": "#/definitions/org.meveo.model.module.MeveoModule"
-        },
         "language": {
             "storages": ["SQL"],
-            "nullable": true,
+            "nullable": false,
             "description": "language",
             "readOnly": false,
             "versionable": false,
@@ -27,7 +18,7 @@
         },
         "id": {
             "storages": ["SQL"],
-            "nullable": true,
+            "nullable": false,
             "description": "id",
             "readOnly": false,
             "versionable": false,
@@ -48,7 +39,8 @@
         },
         "key": {
             "storages": ["SQL"],
-            "nullable": true,
+            "nullable": false,
+            "minLength": 1,
             "description": "key",
             "readOnly": false,
             "versionable": false,
@@ -59,7 +51,9 @@
         }
     },
     "required": [
-        "module",
+        "id",
+        "key",
+        "language",
         "value"
     ]
 }

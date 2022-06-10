@@ -1,6 +1,7 @@
 {
   "code" : "LocalizedMessage",
   "name" : "LocalizedMessage",
+  "description" : "localizedmessage",
   "customEntityCategoryCode" : "MessageBundle",
   "availableStorages" : [ "SQL" ],
   "sqlStorageConfiguration" : {
