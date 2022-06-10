@@ -6,6 +6,18 @@
     "title": "LocalizedMessage",
     "type": "object",
     "properties": {
+        "module": {
+            "storages": ["SQL"],
+            "nullable": false,
+            "minLength": 1,
+            "description": "module",
+            "readOnly": false,
+            "versionable": false,
+            "id": "CE_LocalizedMessage_module",
+            "title": "LocalizedMessage.module",
+            "type": "string",
+            "maxLength": 35
+        },
         "language": {
             "storages": ["SQL"],
             "nullable": false,
@@ -54,6 +66,7 @@
         "id",
         "key",
         "language",
+        "module",
         "value"
     ]
 }

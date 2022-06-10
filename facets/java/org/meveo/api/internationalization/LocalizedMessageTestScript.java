@@ -40,7 +40,7 @@ public class LocalizedMessageTestScript extends Script {
         java.util.List<Object> params = new java.util.ArrayList();
 		params.add("Farhan Munir");
 		params.add(39);
-		params.add(68.25);
+		params.add(68.25); 
 		java.time.LocalDate dob = java.time.LocalDate.of(1982, java.time.Month.NOVEMBER, 13);
 		java.util.Date dateofBirth = java.util.Date.from(dob.atStartOfDay(java.time.ZoneId.systemDefault()).toInstant());
 		params.add(dateofBirth );
@@ -64,8 +64,8 @@ public class LocalizedMessageTestScript extends Script {
           
         LocalizedMessage localizedMessage = new LocalizedMessage();
         localizedMessage.setKey("country.name.fr");
-        localizedMessage.setModule(module);
-        localizedMessage.setLanguage(language);
+        localizedMessage.setModule(module.getCode());//FIXME: Remove .getCode after fix verification
+        localizedMessage.setLanguage(language); 
         this.isDuplicate(localizedMessage);
       
       

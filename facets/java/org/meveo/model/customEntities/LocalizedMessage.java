@@ -22,6 +22,9 @@ public class LocalizedMessage implements CustomEntity {
     private DBStorageType storages;
 
     @JsonProperty(required = true)
+    private String module;
+
+    @JsonProperty(required = true)
     private Language language;
 
     @JsonProperty(required = true)
@@ -48,6 +51,14 @@ public class LocalizedMessage implements CustomEntity {
 
     public void setStorages(DBStorageType storages) {
         this.storages = storages;
+    }
+
+    public String getModule() {
+        return module;
+    }
+
+    public void setModule(String module) {
+        this.module = module;
     }
 
     public Language getLanguage() {
