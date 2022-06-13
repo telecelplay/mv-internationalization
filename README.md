@@ -49,7 +49,7 @@ public class HelloWorldScript extend EndpointScript {
 }
 ```
 
-Assume that we call the Script from an endpoint and that the http request contains the heade "Accepted-Language : Fr-fr"
+Assume that we call the Script from an endpoint and that the http request contains the header "Accepted-Language : Fr-fr"
 
 helloWorldMessage1 will be `J'ai ${age} an${age>1?'':'s'}`
 
