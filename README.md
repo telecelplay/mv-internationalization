@@ -2,7 +2,7 @@ we need an easy way to localize messages produced in scripts, and labels for ent
 
 ## Saving Messages
 
-To store messages, we have custom entity localized message under Message Bundle Category, Module and Language are already listed in dropdown id should be a incremented number that should be unique and key is a unique alphabetical identifier like a resource bundle key for message. 
+To store messages, we have custom entity localized message under Message Bundle Category, Module and Language are already listed in dropdown, id should be a incremented number that should be unique and key is a unique alphabetical identifier like a resource bundle key for message, whicle Value represents a message. 
 
 ![image](https://user-images.githubusercontent.com/100116920/173340101-578a03c2-4e75-46b6-991f-750626b3ed6a.png)
 
