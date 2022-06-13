@@ -28,16 +28,6 @@
             "title": "LocalizedMessage.language",
             "$ref": "#/definitions/org.meveo.model.billing.Language"
         },
-        "id": {
-            "storages": ["SQL"],
-            "nullable": false,
-            "description": "id",
-            "readOnly": false,
-            "versionable": false,
-            "id": "CE_LocalizedMessage_id",
-            "title": "LocalizedMessage.id",
-            "type": "integer"
-        },
         "value": {
             "storages": ["SQL"],
             "nullable": false,
@@ -63,7 +53,6 @@
         }
     },
     "required": [
-        "id",
         "key",
         "language",
         "module",
