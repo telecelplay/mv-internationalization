@@ -28,8 +28,8 @@ welcomeMessage will be `my.secondmessage.key`
 ** Example 2
 
 Let asssume that there is 2 LocalizedMessage in DB:
-
 | module | key | language | value |
+|--------|-----|----------|-------|
 | `mymodule` | `my.message.key` | `en` | `I am ${age} year${age>1?'':'s'} old` |
 | `mymodule` | `my.message.key` | `fr` | `J'ai ${age} an${age>1?'':'s'}` |
 
