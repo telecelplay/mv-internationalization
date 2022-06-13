@@ -4,7 +4,7 @@ we need an easy way to localize messages produced in scripts, and labels for ent
 Usage examples: 
 
 
-Example 1 :
+** Example 1
 
 Let asssume that there is no LocalizedMessage in DB
 ```
@@ -19,12 +19,13 @@ public class HelloWorldScript extend EndpointScript {
        welcomeMessage=i18n.get("my.secondmessage.key");
     }
 }
-``
-helloWorldMessage will be `hello world"`(MessageLocalizer create the missing LocalizedMessage);
+```
+
+helloWorldMessage will be `hello world`(MessageLocalizer create the missing LocalizedMessage);
 welcomeMessage will be `my.secondmessage.key`
 
 
-Example 2 :
+** Example 2
 
 Let asssume that there is 2 LocalizedMessage in DB:
 
