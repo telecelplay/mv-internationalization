@@ -28,9 +28,6 @@ public class LocalizedMessage implements CustomEntity {
     private Language language;
 
     @JsonProperty(required = true)
-    private Long id;
-
-    @JsonProperty(required = true)
     private String value;
 
     @JsonProperty(required = true)
@@ -67,14 +64,6 @@ public class LocalizedMessage implements CustomEntity {
 
     public void setLanguage(Language language) {
         this.language = language;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getValue() {
